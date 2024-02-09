@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/main.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>@ViewData["Title"]</title>
+</head>
+
+<body>
+    <div id="top"></div>
+    <header>
+        <div id="logo-background">
+            <h1><a id="logo" asp-controller="Home" asp-action="Index">Erika Vestin</a></h1>
+        </div>
+        <!-- Meny button, open menu -->
+        <button id="menuBtn">
+        </button>
+        <!-- navigation -->
+        <nav id="nav-menu">
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Start</a></li>
+                <li><a asp-controller="Home" asp-action="Contact">Kontakt</a></li>
+                <li><a asp-controller="Home" asp-action="Education">Utbildning</a></li>
+                <li><a asp-controller="Home" asp-action="Projects">Projekt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="wrap_hero">
+        <picture>
+            <source type="image/jpg" srcset="~/images/small_hero.jpg" media="(min-width: 250px) and (max-width: 600px)">
+            <source type="image/jpg" srcset="~/images/medium_hero.jpg"
+                media="(min-width: 601px) and (max-width: 1024px)">
+            <source type="image/jpg" srcset="~/images/large_hero.jpg" media="(min-width: 1024px)">
+            <img src="~/images/medium_hero.jpg" alt="Låt kodandet börja">
+        </picture>
+    </div>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        <p>
+            <em>© 2024 | Erika Vestin</em>
+        </p>
+    </footer>
+    <script src="~/js/main.js"></script>
+</body>
+
+</html>

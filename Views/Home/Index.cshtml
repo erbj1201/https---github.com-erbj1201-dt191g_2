@@ -1,0 +1,41 @@
+@model mvc.Models.MessageModel
+@{
+    //Title
+    ViewData["Title"] = "Startsida";
+}
+<h2>Startsida</h2>
+
+<article id="about">
+    <h2>Om mig</h2>
+    <div class="content"><img src="~/images/1361.JPG" alt="Erika Vestin">
+        <p>Mitt namn är Erika Vestin och jag är Webbutvecklare. Jag har studerat Webbutvecklingsprogrammet vid
+            Mittuniversitetet och tog examen 2024. Där har jag bland annat studerat användbarhet, tillgänglighet,
+            JavaScript, TypeScript, CSS, HTML, SCSS, Wordpress, PHP, React, Vue, Angular, .Net, Laravel & C#.
+            <br><br>Jag brinner för att hjälpa kunder att skapa den perfekta webbplatsen eller webbapplikationen. Jag
+            har flera års erfarenhet av kundkontakt.
+            <br><br>Jag har barn och man och bor i villa i Timrå. På fritiden tycker jag om att träna, leda
+            gruppträningspass, umgås med familj och vänner och renovera. Jag är ideellt engagerad i Korpen Timrå, där
+            jag är vice ordförande.
+        </p>
+    </div>
+</article>
+<article>
+    <h3>Skicka ett meddelande till mig</h3>
+    <!--Form for messages -->
+    <form method="post">
+        <div asp-validation-summary="ModelOnly"></div>
+        <label asp-for="Name"></label><br>
+        <span class="form-message" asp-validation-for="Name"></span>
+        <input asp-for="Name">
+        <label asp-for="Email"></label><br>
+        <span class="form-message" asp-validation-for="Email"></span>
+        <input asp-for="Email">
+        <label asp-for="Phone"></label><br>
+        <span class="form-message" asp-validation-for="Phone"></span>
+        <input asp-for="Phone">
+        <label asp-for="Message"></label><br>
+        <span class="form-message" asp-validation-for="Message"></span>
+        <textarea asp-for="Message"></textarea>
+        <input type="submit" value="Skicka meddelande">
+    </form>
+</article>

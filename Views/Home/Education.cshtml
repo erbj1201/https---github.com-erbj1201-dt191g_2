@@ -1,0 +1,27 @@
+@model IEnumerable<mvc.Models.CourseModel>
+@{
+    //Title
+    ViewData["Title"] = "Utbildning";
+}
+<section id="education">
+    <h2>Utbildning</h2>
+    <article>
+        <h3>Webbutvecklingsprogrammet vid Mittuniversitetet</h3>
+        <!-- Loop and write courses to page-->
+        @foreach (var course in Model)
+        {
+            <p>@course.CourseCode , @course.CourseName<br>@course.CourseLangKnow</p>
+        }
+    </article>
+</section>
+<article id="knowledge">
+    <h2>Fristående kurser</h2>
+    <div class="img-wrapper">
+        <img src="~/images/alexander-grey-eMP4sYPJ9x0-unsplash.jpg" alt="Böcker är kunskap">
+        <ul id="ul-knowledge">
+            <li>Portfolio och grafisk design <br> Högskolan i Borås</li>
+            <li>Företagsekonomi, Marknadsföring <br>Mittuniversitetet</li>
+            <li>Företagsekonomi, Organisation & ledarskap <br> Mittuniversitetet</li>
+        </ul>
+    </div>
+</article>

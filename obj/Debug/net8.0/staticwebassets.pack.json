@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Admin\\OneDrive\\Skrivbord\\Webbutveckling\\dt191g_webbutveckling_med_.NET\\moment_2\\mvc\\wwwroot\\css\\main.css",
+      "PackagePath": "staticwebassets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\OneDrive\\Skrivbord\\Webbutveckling\\dt191g_webbutveckling_med_.NET\\moment_2\\mvc\\wwwroot\\images\\1361.JPG",
+      "PackagePath": "staticwebassets\\images\\1361.JPG"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\OneDrive\\Skrivbord\\Webbutveckling\\dt191g_webbutveckling_med_.NET\\moment_2\\mvc\\wwwroot\\images\\alexander-grey-eMP4sYPJ9x0-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\alexander-grey-eMP4sYPJ9x0-unsplash.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\OneDrive\\Skrivbord\\Webbutveckling\\dt191g_webbutveckling_med_.NET\\moment_2\\mvc\\wwwroot\\images\\artem-sapegin-DErxVSSQNdM-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\artem-sapegin-DErxVSSQNdM-unsplash.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\OneDrive\\Skrivbord\\Webbutveckling\\dt191g_webbutveckling_med_.NET\\moment_2\\mvc\\wwwroot\\images\\jarvsohotell&aktiviteter.png",
+      "PackagePath": "staticwebassets\\images\\jarvsohotell&aktiviteter.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\OneDrive\\Skrivbord\\Webbutveckling\\dt191g_webbutveckling_med_.NET\\moment_2\\mvc\\wwwroot\\images\\large_hero.jpg",
+      "PackagePath": "staticwebassets\\images\\large_hero.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\OneDrive\\Skrivbord\\Webbutveckling\\dt191g_webbutveckling_med_.NET\\moment_2\\mvc\\wwwroot\\images\\matteos.png",
+      "PackagePath": "staticwebassets\\images\\matteos.png"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\OneDrive\\Skrivbord\\Webbutveckling\\dt191g_webbutveckling_med_.NET\\moment_2\\mvc\\wwwroot\\images\\medium_hero.jpg",
+      "PackagePath": "staticwebassets\\images\\medium_hero.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\OneDrive\\Skrivbord\\Webbutveckling\\dt191g_webbutveckling_med_.NET\\moment_2\\mvc\\wwwroot\\images\\small_hero.jpg",
+      "PackagePath": "staticwebassets\\images\\small_hero.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\OneDrive\\Skrivbord\\Webbutveckling\\dt191g_webbutveckling_med_.NET\\moment_2\\mvc\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.mvc.props",
+      "PackagePath": "build\\mvc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.mvc.props",
+      "PackagePath": "buildMultiTargeting\\mvc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.mvc.props",
+      "PackagePath": "buildTransitive\\mvc.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.mvc.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

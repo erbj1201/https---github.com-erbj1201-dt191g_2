@@ -1,0 +1,1027 @@
+/*Allmän layout och design */
+/*Border-box för hela webbplatsen*/
+* {
+  box-sizing: border-box;
+}
+/*Body*/
+body{
+    background-color: #fff;
+    width: 100%;
+    margin: auto;
+} 
+header{
+  z-index: 10000000000;
+}/*logga på hero-img*/
+  #logo{
+    margin: auto;
+    font-family: 'Dancing Script', cursive, sans-serif;
+    text-decoration: none;
+    color: #000;
+  }
+/*Text och rubriker*/
+h3, h4, h5{ 
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5;
+    margin: 1em auto;
+    text-align: center;
+}
+h2{
+  font-family:'Dancing Script', cursive, sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+}
+h3{
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+}
+h4{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+h5{
+    font-size: 1.0em;
+    font-weight: 700;
+}
+p, a{ 
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+}
+em{
+    font-family:'Dancing Script', cursive, sans-serif;
+}
+strong{
+  font-size: 0.8em;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  color:#595a59;
+} /*Main*/
+main{
+    margin: auto;
+    width: 100%;
+}/*Footer*/
+footer{
+    font-size: 1.4em;
+    text-align: center;
+} /*Länkfärg*/
+a{
+  color: #a02901;
+  margin: auto;
+} 
+
+.link{
+  background-color: #a02901;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  margin: 1em auto;
+  width: fit-content;
+}
+.link:hover{
+  background-color: #000000;
+  color: white;
+}
+
+/*Ul för kunskaper*/
+#ul-knowledge{
+  list-style-type:circle;
+  margin: auto;
+  padding: 2em;
+  height: fit-content;
+}
+#ul-knowledge li{
+  font-family: 'Quicksand', sans-serif;
+  justify-self: left;
+  margin: 0 1em;
+  padding: 0.4em 0;
+} /*Genomskinlighet bakgrundsbild kunskaper*/
+#knowledge img{
+  opacity: 0.4;
+}
+ /*Om mig */
+ #about{
+  background-color: #dd9b7278;
+ }
+ .code{
+  background-color: #f6e7e1;
+  padding: 1em;
+}
+.wrapper-article article{
+  background-color: #f7f0f0;
+      box-shadow: 0px 0px 1dvi 0px #0000004e;
+}
+.content img{
+  filter: sepia(70%);
+  border-radius: 100%;
+}
+#education{
+  display: grid;
+  margin: auto;
+  justify-content: center;
+  width: 100%;
+}
+#education article{
+  margin: auto;
+  justify-self: center;
+  width: 100%;
+}
+form{
+  background-color: #eba07154;
+  width: 100%;
+  max-width: 300px;
+  padding: 2em;
+  margin: auto;
+  border-radius: 2%;
+}
+label{
+  padding: 2em 0;
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+  margin: 0.5em 0;
+}
+input{
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  margin: 1em 0;
+}
+input[type=submit]{
+  background-color: #a02901;
+  color: white;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  border: none;
+  border-radius: 5%;
+}
+
+textarea{
+  height: 150px;
+  border: none;
+  width: 100%;
+  margin: 1em 0;
+}
+.form-message{
+  font-family: 'Quicksand', sans-serif;
+  color: red;
+}
+
+/*Media queries */
+/*Mobila enheter*/
+@media screen and (max-width: 600px) {
+  /*Body design*/
+    body {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 0;
+      width: 98%;
+      max-width: 600px;
+    } /*Header*/
+    header {
+      height: 60px;
+      width: 100%;
+      margin: auto;
+      position: fixed;
+      padding: 0;
+      display: flex;
+      justify-content: right;
+      max-width: 600px;
+    } /*Namn - logga ovanpå hero-img*/
+    #logo{
+      margin: 0.5em;
+      align-self: center;
+      padding: 0 1em;
+      font-size: 1.2em;
+    } /*bakgrund logga hero-img*/
+    #logo-background{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-color: #ffffffae;
+      width: 100%;
+      height: fit-content;
+      max-height: 70px;
+      margin: auto;
+      padding: 0;
+    } /*Navigering hamburgermeny */
+    #nav-menu {
+        position: fixed;
+        top: 60px;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        background-color: #fff;
+        transition: 0.5s;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.219);
+      }
+      #nav-menu ul {
+        width: 100%;
+        list-style-type: none;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+      }
+      #nav-menu li {
+        padding: 1em;
+        width: 70%;
+        justify-self: center;
+        margin: auto;
+      }
+      #nav-menu li:hover {
+        cursor: pointer;
+        border-bottom: #000 1px solid;
+        width: 70%;
+        margin: auto;
+      }
+      #nav-menu li a {
+      color: #000;
+      text-decoration: none;
+      padding: 0 1em;
+      font-size: 1em;
+      margin: auto;
+      letter-spacing: 2px;
+    }
+    #nav-menu.active{
+     right: 0px;
+    }
+    /*Menyknapp*/
+    #menuBtn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      background-color: #ffffff76;
+      cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+ 
+  #menuBtn::before{
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background-color: #000;
+    transform: translateY(-5px);
+    transition: 0.2s;
+  }
+  #menuBtn::after{
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background-color: #000;
+    transform: translateY(5px);
+    transition: 0.2s;
+  }
+  #menuBtn.active::before{
+    transform: translateY(0px) rotate(45deg);
+    background-color: #a02901;
+  }
+  #menuBtn.active::after{
+    transform: translateY(0px) rotate(-45deg);
+    background-color: #a02901;
+  }
+
+ /*Hero-img*/
+    #wrap_hero{
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 0;
+    }
+     #wrap_hero img {
+      width: 100%;
+      height: 100%;
+      max-width: 520px;
+    margin: auto;
+      padding: 0;
+      z-index: -10;
+    } /*Main*/
+    main{
+      display: grid;
+      max-width: 550px;
+    } /*Article-element på hela webbplatsen*/
+    article{
+      display: grid;
+      margin: 2em auto;
+      align-items: center;
+      width: 95%;
+    }
+    article h2{
+      display: grid;
+      grid-area: 1/1;
+    }
+    .content{
+      width: 98%;
+      margin: auto;
+    }
+    /*Om mig */
+    #about{
+      width: 100%;
+      max-width: 520px;
+    }
+.content img{
+  display: grid;
+  grid-area: 2/1;
+width: 100%;
+height: 100%;
+max-width: 300px;
+margin: auto;
+justify-self: center;
+}
+  .content p{
+    margin: 2em auto;
+    width: 100%;
+    display: grid;
+    grid-area: 3/1;
+    text-align: left;
+    max-width: 300px;
+  }
+ /*Kunskaper*/
+    #knowledge{
+      max-width: 520px;
+      width: 100%;
+      height: fit-content;
+      margin: auto;
+      z-index: -1;
+    }
+    #ul-knowledge{
+      position: absolute;
+      top: -30px;
+      width: 100%;
+      height: 100%;
+      padding: 3em;
+      margin: auto;
+    }
+    #ul-knowledge li{
+      font-size: 0.8em;
+    }
+    #knowledge img{
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-area: 1/1;
+      opacity: 0.4;
+    } /*Wrapper bakgrundsbild ul-listan*/
+    .img-wrapper{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      max-width: 520px;
+    }
+    /*Projekt*/
+#created{
+  width: 100%;
+  max-width: 520px;
+  margin: auto;
+}
+.wrapper-article article{
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+  margin: 2em auto;
+  background-color: #f7f0f0;
+      box-shadow: 0px 0px 1dvi 0px #0000004e;
+      padding: 1em;
+}
+.wrapper-article article img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  max-width: 400px;
+  border: 1px solid rgb(181, 177, 177);
+}
+.wrapper-article img:hover{
+    opacity: 0.5;
+  
+}
+.wrapper-article article p{
+  margin: 1em auto;
+  max-width: 380px;
+} /*Kontakt*/
+#contact{
+  margin: auto;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+}
+#contactcard{
+  display: flex;
+  width: fit-content;
+  max-width: 400px;
+  padding: 1em;
+  justify-content: space-between;
+  background-color: #eeecec;
+  box-shadow: 0 0 5px 0 #0000004e;
+}
+#contact p strong{
+  font-family: 'Dancing Script', cursive, sans-serif;
+  font-size: 2em;
+}
+#contactcard img{
+  width: 100%;
+  height: 100%;
+  max-width: 80px;
+  margin: 5% 1% 5% 5%;
+  border-radius: 100%;
+}
+#contactcard p{
+  margin: auto;
+  padding: 1em;
+ align-self: center;
+ font-weight: 400;
+}
+#contactcard p strong{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+  line-height: 1.75;
+  font-weight: 600;
+  margin: auto;
+}
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+      /*Body design*/
+      body {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+        width: 100%;
+        max-width: 1024px;
+      } /*Header*/
+      header {
+        height: 60px;
+        width: 100%;
+        margin: auto;
+        position: fixed;
+        padding: 0;
+        display: flex;
+        justify-content: right;
+        max-width: 1024px;
+      } /*Namn - logga ovanpå hero-img*/
+      #logo{
+        margin: 0.5em;
+        align-self: center;
+        padding: 0 1em;
+        font-size: 1.2em;
+      } /*bakgrund logga hero-img*/
+      #logo-background{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #ffffffae;
+        width: 100%;
+        height: fit-content;
+        max-height: 70px;
+        margin: auto;
+        padding: 0;
+      } /*Navigering hamburgermeny */
+      #nav-menu {
+          position: fixed;
+          top: 60px;
+          right: -200px;
+          width: 200px;
+          height: 100vh;
+          background-color: #fff;
+          transition: 0.5s;
+          box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.219);
+        }
+        #nav-menu ul {
+          width: 100%;
+          list-style-type: none;
+          text-align: center;
+          margin: auto;
+          padding: 0;
+        }
+        #nav-menu li {
+          padding: 1em;
+          width: 70%;
+          justify-self: center;
+          margin: auto;
+        }
+        #nav-menu li:hover {
+          cursor: pointer;
+          border-bottom: #000 1px solid;
+          width: 70%;
+          margin: auto;
+        }
+        #nav-menu li a {
+        color: #000;
+        text-decoration: none;
+        padding: 0 1em;
+        font-size: 1em;
+        margin: auto;
+        letter-spacing: 2px;
+      }
+      #nav-menu.active{
+       right: 0px;
+      }
+      /*Menyknapp*/
+      #menuBtn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        background-color: #ffffff76;
+        cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+    }
+   
+    #menuBtn::before{
+      content: "";
+      position: absolute;
+      width: 28px;
+      height: 2px;
+      background-color: #000;
+      transform: translateY(-5px);
+      transition: 0.2s;
+    }
+    #menuBtn::after{
+      content: "";
+      position: absolute;
+      width: 28px;
+      height: 2px;
+      background-color: #000;
+      transform: translateY(5px);
+      transition: 0.2s;
+    }
+    #menuBtn.active::before{
+      transform: translateY(0px) rotate(45deg);
+      background-color: #a02901;
+    }
+    #menuBtn.active::after{
+      transform: translateY(0px) rotate(-45deg);
+      background-color: #a02901;
+    }
+  
+   /*Hero-img*/
+      #wrap_hero{
+        display: block;
+        width: 100%;
+        height: 100%;
+        max-width: 924px;
+        margin: 0 auto;
+        padding: 0;
+      }
+       #wrap_hero img {
+        width: 100%;
+        height: 100%;
+        max-width: 924px;
+      margin: auto;
+        padding: 0;
+        z-index: -10;
+      } /*Main*/
+      main{
+        display: grid;
+        max-width: 1000px;
+      } /*Article-element på hela webbplatsen*/
+      article{
+        display: grid;
+        margin: 2em auto;
+        align-items: center;
+        width: 95%;
+      }
+      article h2{
+        display: grid;
+        grid-area: 1/1;
+      }
+      .content{
+        width: 98%;
+        margin: auto;
+      }
+      /*Om mig */
+      #about{
+        width: 100%;
+        max-width: 924px;
+      }
+  .content img{
+    display: grid;
+    grid-area: 2/1;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  margin: auto;
+  justify-self: center;
+  }
+    .content p{
+      margin: 2em auto;
+      width: 100%;
+      display: grid;
+      grid-area: 3/1;
+      text-align: left;
+      max-width: 300px;
+    }
+   /*Kunskaper*/
+      #knowledge{
+        max-width: 924px;
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+        z-index: -1;
+      }
+      #ul-knowledge{
+        position: absolute;
+        top: 4%;
+        width: 100%;
+        height: 100%;
+        padding: 3em;
+        margin: auto;
+      }
+      #ul-knowledge li{
+        font-size: 1.4em;
+      }
+      #knowledge img{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-area: 1/1;
+        opacity: 0.4;
+      } /*Wrapper bakgrundsbild ul-listan*/
+      .img-wrapper{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        max-width: 924px;
+      }
+      /*Projekt*/
+  #created{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .wrapper-article article{
+    width: 100%;
+    max-width: 900px;
+    height: 100%;
+    margin: 2em auto;
+    background-color: #f7f0f0;
+        box-shadow: 0px 0px 1dvi 0px #0000004e;
+        padding: 1em;
+  }
+  .wrapper-article article img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    max-width: 700px;
+    border: 1px solid rgb(181, 177, 177);
+  }
+  .wrapper-article img:hover{
+      opacity: 0.5;
+    
+  }
+  .wrapper-article article p{
+    margin: 1em auto;
+    max-width: 500px;
+  } /*Kontakt*/
+  #contact{
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+  }
+  #contactcard{
+    display: flex;
+    width: fit-content;
+    max-width: 650px;
+    padding: 1em;
+    justify-content: space-between;
+    background-color: #eeecec;
+    box-shadow: 0 0 5px 0 #0000004e;
+  }
+  #contact p strong{
+    font-family: 'Dancing Script', cursive, sans-serif;
+    font-size: 2em;
+  }
+  #contactcard img{
+    width: 100%;
+    height: 100%;
+    max-width: 120px;
+    margin: 5% 1% 5% 5%;
+    border-radius: 100%;
+  }
+  #contactcard p{
+    margin: auto;
+    padding: 1em;
+   align-self: center;
+   font-weight: 400;
+  }
+  #contactcard p strong{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.75;
+    font-weight: 600;
+    margin: auto;
+  }
+  }
+
+@media screen and (min-width: 1024px) {
+  /*Body design*/
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 99%;
+    margin: auto;
+    max-width: 1520px;
+  }
+/*Main*/
+  main {
+    width: 100%;
+    margin: auto;
+    max-width: 1520px;
+  }
+   /*Header*/
+  header {
+    height: 60px;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    max-width: 1520px;
+  } /*Namn - logga ovanpå hero-img*/
+  #logo{
+    margin: 0.5em;
+    align-self: center;
+    padding: 0 1em;
+    font-size: 1.2em;
+  } /*bakgrund logga hero-img*/
+  #logo-background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #ffffffae;
+    width: 100%;
+    height: fit-content;
+    max-height: 70px;
+    margin: auto;
+    padding: 0;
+  } /*Navigering hamburgermeny */
+  #nav-menu {
+      position: fixed;
+      top: 60px;
+      right: -300px;
+      width: 300px;
+      height: 100vh;
+      background-color: #fff;
+      transition: 0.5s;
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.219);
+    }
+    #nav-menu ul {
+      width: 100%;
+      list-style-type: none;
+      text-align: center;
+      margin: auto;
+      padding: 0;
+    }
+    #nav-menu li {
+      padding: 1em;
+      width: 70%;
+      justify-self: center;
+      margin: auto;
+    }
+    #nav-menu li:hover {
+      cursor: pointer;
+      border-bottom: #000 1px solid;
+      width: 70%;
+      margin: auto;
+    }
+    #nav-menu li a {
+    color: #000;
+    text-decoration: none;
+    padding: 0 1em;
+    font-size: 1em;
+    margin: auto;
+    letter-spacing: 2px;
+  }
+  #nav-menu.active{
+   right: 0px;
+  }
+  /*Menyknapp*/
+  #menuBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff76;
+    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+#menuBtn::before{
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background-color: #000;
+  transform: translateY(-5px);
+  transition: 0.2s;
+}
+#menuBtn::after{
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 2px;
+  background-color: #000;
+  transform: translateY(5px);
+  transition: 0.2s;
+}
+#menuBtn.active::before{
+  transform: translateY(0px) rotate(45deg);
+  background-color: #a02901;
+}
+#menuBtn.active::after{
+  transform: translateY(0px) rotate(-45deg);
+  background-color: #a02901;
+}
+
+/*Hero-img*/
+  #wrap_hero{
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0;
+  }
+   #wrap_hero img {
+    width: 100%;
+    height: 100%;
+    max-width: 1520px;
+  margin: auto;
+    padding: 0;
+    z-index: -10;
+  }  /*Article-element på hela webbplatsen*/
+  article{
+    display: grid;
+    margin: 2em auto;
+    align-items: center;
+    width: 95%;
+  }
+  article h2{
+    display: grid;
+    grid-area: 1/1;
+  }
+  .content{
+    width: 98%;
+    max-width: 924px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+  }
+  /*Om mig */
+  #about{
+    width: 100%;
+    max-width: 1520px;
+  }
+.content img{
+display: grid;
+grid-area: 2/1;
+width: 100%;
+height: 100%;
+max-width: 300px;
+margin: 3em auto;
+justify-self: center;
+}
+.content p{
+  margin: 3em auto;
+  width: 100%;
+  display: grid;
+  grid-area: 3/1;
+  text-align: left;
+  max-width: 300px;
+}
+/*Kunskaper*/
+  #knowledge{
+    max-width: 1520px;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    z-index: -1;
+  }
+  #ul-knowledge{
+    position: absolute;
+    top: 4%;
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    margin: auto;
+  }
+  #ul-knowledge li{
+    font-size: 2em;
+  }
+  #knowledge img{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-area: 1/1;
+    opacity: 0.4;
+  } /*Wrapper bakgrundsbild ul-listan*/
+  .img-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    max-width: 924px;
+  }
+  /*Projekt*/
+#created{
+width: 100%;
+max-width: 1520px;
+margin: auto;
+}
+.wrapper-article{
+  display: flex;
+justify-content: space-between;
+height: fit-content;
+margin: auto;
+}
+.wrapper-article article{
+width: 100%;
+max-width: 500px;
+height: 100%;
+margin: 2em auto;
+background-color: #f7f0f0;
+    box-shadow: 0px 0px 1dvi 0px #0000004e;
+    padding: 1em;
+    
+}
+.wrapper-article article img {
+width: 100%;
+height: 100%;
+margin: auto;
+max-width: 500px;
+border: 1px solid rgb(181, 177, 177);
+}
+.wrapper-article img:hover{
+  opacity: 0.5;
+
+}
+.wrapper-article article p{
+margin: 1em auto;
+max-width: 400px;
+} /*Kontakt*/
+#contact{
+margin: auto;
+justify-content: center;
+width: 100%;
+height: 100%;
+max-width: 700px;
+}
+#contactcard{
+display: flex;
+width: fit-content;
+max-width: 650px;
+padding: 1em;
+justify-content: space-between;
+background-color: #eeecec;
+box-shadow: 0 0 5px 0 #0000004e;
+}
+#contact p strong{
+font-family: 'Dancing Script', cursive, sans-serif;
+font-size: 2em;
+}
+#contactcard img{
+width: 100%;
+height: 100%;
+max-width: 120px;
+margin: 5% 1% 5% 5%;
+border-radius: 100%;
+}
+#contactcard p{
+margin: auto;
+padding: 1em;
+align-self: center;
+font-weight: 400;
+}
+#contactcard p strong{
+font-family: 'Quicksand', sans-serif;
+font-size: 1.5em;
+line-height: 1.75;
+font-weight: 600;
+margin: auto;
+}
+form{
+  width: 90%;
+}
+}

@@ -1,0 +1,86 @@
+[
+    {
+        "Id" : 1,
+        "CourseCode": "DT057G",
+        "CourseName":"Webbutveckling I",
+        "CourseLangKnow": "HTML & CSS"
+    },
+    {
+        "Id" : 2,
+        "CourseCode": "DT084G",
+        "CourseName":"Introduktion till programmering i JavaScript",
+        "CourseLangKnow": "JavaScript"
+    },
+    {
+        "Id" : 3,
+        "CourseCode": "DT068G",
+        "CourseName":"Webbanvändbarhet",
+        "CourseLangKnow": "Användbarhet & tillgänglighet"
+    },
+    {
+        "Id" : 4,
+        "CourseCode": "DT200G",
+        "CourseName":"Grafisk teknik för webb",
+        "CourseLangKnow": "Bildredigering, filmredigering, bild & film på webb"
+    },
+    {
+        "Id" : 5,
+        "CourseCode": "DT093G",
+        "CourseName":"Webbutveckling II",
+        "CourseLangKnow": "Versionshantering, OOB PHP & databaskopplingar"
+    },
+    {
+        "Id" : 6,
+        "CourseCode": "DT003G",
+        "CourseName":"Databaser",
+        "CourseLangKnow": "MySQL-databaser"
+    },
+    {
+        "Id" : 7,
+        "CourseCode": "DT197G",
+        "CourseName":"Webbdesign för CMS",
+        "CourseLangKnow": "CMS (Wordpress) och sökmotoroptimering (SEO)"
+    },
+    {
+        "Id" : 8,
+        "CourseCode": "DT173G",
+        "CourseName":"Webbutveckling III",
+        "CourseLangKnow": "Automatiserad arbetsprocess (Gulp), SCSS, ECMAScript, TypeScript & REST-webbtjänster"
+    },
+    {
+        "Id" : 9,
+        "CourseCode": "Fullstack-utveckling med ramverk",
+        "CourseName":"DT193G",
+        "CourseLangKnow": "CSS-ramverk (Bootstrap, Tailwind), Backendend-ramverk (Laravel) & Frontend-ramverk (Vue)"
+    },
+    {
+        "Id" : 10,
+        "CourseCode": "IK060G",
+        "CourseName":"Projektledning",
+        "CourseLangKnow": "Traditionell & agil projektledning"
+    },
+    {
+        "Id" : 11,
+        "CourseCode": "DT162G",
+        "CourseName":"Javascriptbaserad Webbutveckling",
+        "CourseLangKnow": "NodeJs, Backend-ramverk (Express), Frontend-ramverk (React) & NoSQL-databaser (MongoDB)"
+    },  
+    {
+        "Id" : 12,
+        "CourseCode": "DT071G",
+        "CourseName":"Programmering i C#.NET",
+        "CourseLangKnow": "NodeJs, Backend-ramverk (Express), Frontend-ramverk (React) & NoSQL-databaser (MongoDB)"
+    },
+    {
+        "Id" : 13,
+        "CourseCode": "DT191G",
+        "CourseName":"Webbutveckling med .NET",
+        "CourseLangKnow": ".NET Core, Blazor, Razor, .NET CORE MVC, Entity Framework Core & webbtjänster med ASP.net core "
+    },
+    {
+        "Id" : 12,
+        "CourseCode": "IG021G",
+        "CourseName":"Affärsplaner och kommersialisering",
+        "CourseLangKnow": "Skapa fullständiga affärsplaner"
+    }
+]
